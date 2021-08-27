@@ -5,15 +5,25 @@
   
 
   
-  <title>Hexo</title>
+  <title>VMware &amp; Ubuntu Installation on MacOS | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="VMware &amp; Ubuntu Installation on MacOS">
+<meta property="og:url" content="http://example.com/2021/08/28/VMware-Ubuntu-on-MacOS/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://raw.githubusercontent.com/Chen-Yue-Zhao/Chen-Yue-Zhao.github.io/master/img/VMware-Ubuntu-on-MacOS/img1.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Chen-Yue-Zhao/Chen-Yue-Zhao.github.io/master/img/VMware-Ubuntu-on-MacOS/img2.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Chen-Yue-Zhao/Chen-Yue-Zhao.github.io/master/img/VMware-Ubuntu-on-MacOS/img3.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Chen-Yue-Zhao/Chen-Yue-Zhao.github.io/master/img/VMware-Ubuntu-on-MacOS/img4.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Chen-Yue-Zhao/Chen-Yue-Zhao.github.io/master/img/VMware-Ubuntu-on-MacOS/img5.png">
+<meta property="article:published_time" content="2021-08-27T17:04:19.000Z">
+<meta property="article:modified_time" content="2021-08-27T18:01:02.795Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="虚拟机安装">
+<meta property="article:tag" content="MacOS">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Chen-Yue-Zhao/Chen-Yue-Zhao.github.io/master/img/VMware-Ubuntu-on-MacOS/img1.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -62,9 +72,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-VMware-Ubuntu-on-MacOS" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-VMware-Ubuntu-on-MacOS" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2021/08/28/VMware-Ubuntu-on-MacOS/" class="article-date">
   <time datetime="2021-08-27T17:04:19.000Z" itemprop="datePublished">2021-08-28</time>
@@ -81,8 +89,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/28/VMware-Ubuntu-on-MacOS/">VMware &amp; Ubuntu Installation on MacOS</a>
+    <h1 class="article-title" itemprop="name">
+      VMware &amp; Ubuntu Installation on MacOS
     </h1>
   
 
@@ -90,12 +98,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><escape>
-        
-          <p class="article-more-link">
-            <a href="/2021/08/28/VMware-Ubuntu-on-MacOS/#more">Read More</a>
-          </p>
-        
+        <p><escape><span id="more"></span></escape></p>
+<h3 id="系统配置"><a href="#系统配置" class="headerlink" title="系统配置"></a>系统配置</h3><p>MacBook Pro (13-inch, 2019, Four Thunderbelt 3 ports, 8 GB Memory)<br>macOS Bug Sur Version 11.2.3<br><br/> </p>
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><ol>
+<li>官网下载VMware Fusion</li>
+<li>官网下载最新版本ubuntu</li>
+<li>Vmware Fusion创建新的虚拟机<br/></li>
+</ol>
+<h3 id="1-官网下载VMware-Fusion"><a href="#1-官网下载VMware-Fusion" class="headerlink" title="1.官网下载VMware Fusion"></a>1.官网下载VMware Fusion</h3><p>我并没有选择在官网下载，原因有三。<br>第一，我没太看懂官网的下载地址与下载要求；<br>第二，我注意到VMware是收费产品（注意到另一个虚拟机软件年年收费，在乎性价比的可以注意）<br>第三，北大官方购买的了正版VMware。</p>
+<p>在官网下载<b>dmg</b>后安装VMware。在安装过程中会要求输入密钥，这个密钥通过正规渠道完成购买后是能够在官网得到查询的。<br>p.s. baidu应该也能费功夫找到可以用的密钥。</p>
+<h3 id="2-官网下载最新版本ubuntu"><a href="#2-官网下载最新版本ubuntu" class="headerlink" title="2.官网下载最新版本ubuntu"></a>2.官网下载最新版本ubuntu</h3><p>进入官网<a target="_blank" rel="noopener" href="https://www.ubuntu.com/download/desktop">https://www.ubuntu.com/download/desktop</a>下载最新版本。<br><img src="https://raw.githubusercontent.com/Chen-Yue-Zhao/Chen-Yue-Zhao.github.io/master/img/VMware-Ubuntu-on-MacOS/img1.png"><br>本次下载选用Ubuntu 20.04.3 LTS，下载成功后，会得到一个<b>.iso</b>文件。注意不要把<b>.iso</b>文件解压了。<br>接下来将<b>.iso</b>文件放置在你需要的文件路径上。我选用的是<code>/User/Developer</code>这个路径，方便接下来寻找。<br><img src="https://raw.githubusercontent.com/Chen-Yue-Zhao/Chen-Yue-Zhao.github.io/master/img/VMware-Ubuntu-on-MacOS/img2.png"><br></br></p>
+<h3 id="3-Vmware-Fusion创建新的虚拟机"><a href="#3-Vmware-Fusion创建新的虚拟机" class="headerlink" title="3. Vmware Fusion创建新的虚拟机"></a>3. Vmware Fusion创建新的虚拟机</h3><p>打开VMware Fusion，选择<kbd>File</kbd> - <kbd>New</kbd>，在界面内选择<kbd>Create a custom virtual machine</kbd><br><img src="https://raw.githubusercontent.com/Chen-Yue-Zhao/Chen-Yue-Zhao.github.io/master/img/VMware-Ubuntu-on-MacOS/img3.png"><br><img src="https://raw.githubusercontent.com/Chen-Yue-Zhao/Chen-Yue-Zhao.github.io/master/img/VMware-Ubuntu-on-MacOS/img4.png"></p>
+<p>在选择系统时候找到<kbd>Linux</kbd> - <kbd>Ubuntu 64-bit</kbd>，然后一路<kbd>continue</kbd>下去。<br><img src="https://raw.githubusercontent.com/Chen-Yue-Zhao/Chen-Yue-Zhao.github.io/master/img/VMware-Ubuntu-on-MacOS/img5.png"></p>
+
       
     </div>
     <footer class="article-footer">
@@ -107,101 +122,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hexo-githubPages-MacOS" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/08/17/hexo-githubPages-MacOS/" class="article-date">
-  <time datetime="2021-08-17T08:14:59.000Z" itemprop="datePublished">2021-08-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/17/hexo-githubPages-MacOS/">hexo_github_MacOS</a>
-    </h1>
+    <a href="/2021/08/17/hexo-githubPages-MacOS/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">hexo_github_MacOS</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><escape>
-        
-          <p class="article-more-link">
-            <a href="/2021/08/17/hexo-githubPages-MacOS/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/17/hexo-githubPages-MacOS/" data-id="cksft08o20001aaya6uowbzfc" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/08/16/hello-world/" class="article-date">
-  <time datetime="2021-08-16T07:21:04.734Z" itemprop="datePublished">2021-08-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/16/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/16/hello-world/" data-id="cksft08nr0000aayaezbp5i89" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
