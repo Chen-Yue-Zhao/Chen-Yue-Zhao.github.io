@@ -26,19 +26,19 @@
 <meta property="og:url" content="http://example.com/2021/08/17/hexo-githubPages-MacOS/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/images/blog2.png">
-<meta property="og:image" content="http://example.com/images/blog3.png">
-<meta property="og:image" content="http://example.com/images/blog4.png">
-<meta property="og:image" content="http://example.com/images/blog5.png">
-<meta property="og:image" content="http://example.com/images/blog6.png">
-<meta property="og:image" content="http://example.com/images/blog7.png">
+<meta property="og:image" content="http://example.com/2021/08/17/hexo-githubPages-MacOS/blog2.png">
+<meta property="og:image" content="http://example.com/2021/08/17/hexo-githubPages-MacOS/blog3.png">
+<meta property="og:image" content="http://example.com/2021/08/17/hexo-githubPages-MacOS/blog4.png">
+<meta property="og:image" content="http://example.com/2021/08/17/hexo-githubPages-MacOS/blog5.png">
+<meta property="og:image" content="http://example.com/2021/08/17/hexo-githubPages-MacOS/blog6.png">
+<meta property="og:image" content="http://example.com/2021/08/17/hexo-githubPages-MacOS/blog7.png">
 <meta property="article:published_time" content="2021-08-17T08:14:59.000Z">
 <meta property="article:modified_time" content="2021-08-27T18:04:51.550Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="MacOS">
 <meta property="article:tag" content="hexo使用">
+<meta property="article:tag" content="MacOS">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/blog2.png">
+<meta name="twitter:image" content="http://example.com/2021/08/17/hexo-githubPages-MacOS/blog2.png">
 
 <link rel="canonical" href="http://example.com/2021/08/17/hexo-githubPages-MacOS/">
 
@@ -266,7 +266,7 @@
 <p><strong>[注]同样有其他安装nvm以及node.js、npm的方式，我在尝试过程中遇到没有解决的问题，进而选用了如上流程</strong></p>
 <h2 id="2-hexo的安装与准备"><a href="#2-hexo的安装与准备" class="headerlink" title="2. hexo的安装与准备"></a>2. hexo的安装与准备</h2><p>Follow<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">hexo官网</a>的instructions就可以使用了，就在首页。<br>hexo安装的位置因人而异，我直接在～下在终端运行该段代码。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g <span class="comment"># 安装hexo</span></span><br><span class="line">$ hexo init blog <span class="comment"># 在当前folder下新生成一个hexo文件，文件名为blog（应该可以自定义）</span></span><br><span class="line"><span class="comment"># 注意要根据你自己想要存放hexo博客内容的地方在运行第二行代码</span></span><br><span class="line">$ <span class="built_in">cd</span> blog <span class="comment"># 这里是进入blog folder</span></span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server <span class="comment"># 此处等同于hexo s</span></span><br></pre></td></tr></table></figure>
-<p>运行<strong>hexo s</strong>后会出现如下内容，你可以通过复制临时链接预览你的网页，按ctrl+c退出。<br><img src="/images/blog2.png"></p>
+<p>运行<strong>hexo s</strong>后会出现如下内容，你可以通过复制临时链接预览你的网页，按ctrl+c退出。<br><img src="/2021/08/17/hexo-githubPages-MacOS/blog2.png"></p>
 <h2 id="3-hexo与git间的交互准备"><a href="#3-hexo与git间的交互准备" class="headerlink" title="3. hexo与git间的交互准备"></a>3. hexo与git间的交互准备</h2><h3 id="ssh密匙创建"><a href="#ssh密匙创建" class="headerlink" title="ssh密匙创建"></a>ssh密匙创建</h3><ol>
 <li><p>在终端输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">&quot;username&quot;</span> <span class="comment"># username一般指你的邮箱地址</span></span><br></pre></td></tr></table></figure>
@@ -279,12 +279,12 @@
 <h3 id="git-添加-ssh密匙"><a href="#git-添加-ssh密匙" class="headerlink" title="git 添加 ssh密匙"></a>git 添加 ssh密匙</h3><ol>
 <li><p>在你刚才添加ssh密匙的路finder径下点击<strong>command+shift+.<strong>，显示隐藏文件，会出现</strong>.ssh的folder</strong>，进入后找到<strong>id_rsa.pub</strong>文件，用TextEdit打开并全部复制到剪切板。</p>
 </li>
-<li><p>打开你的github网页（这里默认你已经注册并登录）<br>如下图，点击<strong>Settings</strong>，点击<strong>SSH and GPG keys</strong><br><img src="/images/blog3.png"><img src="/images/blog4.png"><br>进入后选择<strong>New SSH key</strong>，<strong>Title</strong>自己命名，<strong>Keys</strong>处粘贴复制的文件内容，然后<strong>增加密匙</strong>就好啦。</p>
+<li><p>打开你的github网页（这里默认你已经注册并登录）<br>如下图，点击<strong>Settings</strong>，点击<strong>SSH and GPG keys</strong><br><img src="/2021/08/17/hexo-githubPages-MacOS/blog3.png"><img src="/2021/08/17/hexo-githubPages-MacOS/blog4.png"><br>进入后选择<strong>New SSH key</strong>，<strong>Title</strong>自己命名，<strong>Keys</strong>处粘贴复制的文件内容，然后<strong>增加密匙</strong>就好啦。</p>
 </li>
 <li><p>在github上新创建一个repository，注意命名格式必须为<strong>xxx.github.io</strong>，其中<strong>xxx</strong>为你的用户名。</p>
 </li>
 </ol>
-<h2 id="4-如何用hexo编辑属于你个人的博客"><a href="#4-如何用hexo编辑属于你个人的博客" class="headerlink" title="4. 如何用hexo编辑属于你个人的博客"></a>4. 如何用hexo编辑属于你个人的博客</h2><h3 id="配置-config-yml文件"><a href="#配置-config-yml文件" class="headerlink" title="配置_config.yml文件"></a>配置_config.yml文件</h3><p>我们在终端回到<strong>2</strong>中的<strong>blog</strong>的路径，用编辑器打开<strong>config.yml</strong>文件，进行修改，如下图所示。<br><img src="/images/blog5.png"><br>在<strong>deploy</strong> 内分别加入并编辑<strong>type</strong>、<strong>repo</strong>、<strong>branch</strong>三个关键字。注意，冒号后要空一格。<br>完成如下修改</p>
+<h2 id="4-如何用hexo编辑属于你个人的博客"><a href="#4-如何用hexo编辑属于你个人的博客" class="headerlink" title="4. 如何用hexo编辑属于你个人的博客"></a>4. 如何用hexo编辑属于你个人的博客</h2><h3 id="配置-config-yml文件"><a href="#配置-config-yml文件" class="headerlink" title="配置_config.yml文件"></a>配置_config.yml文件</h3><p>我们在终端回到<strong>2</strong>中的<strong>blog</strong>的路径，用编辑器打开<strong>config.yml</strong>文件，进行修改，如下图所示。<br><img src="/2021/08/17/hexo-githubPages-MacOS/blog5.png"><br>在<strong>deploy</strong> 内分别加入并编辑<strong>type</strong>、<strong>repo</strong>、<strong>branch</strong>三个关键字。注意，冒号后要空一格。<br>完成如下修改</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">type: git</span><br><span class="line">repo: # 这里对应你的xxx.github.io这一repository对应的SSH地址，可以在github该repository中找到</span><br><span class="line">branch: master </span><br></pre></td></tr></table></figure>
 <p>修改结束之后保存。</p>
 <h3 id="同步hexo到github与网站"><a href="#同步hexo到github与网站" class="headerlink" title="同步hexo到github与网站"></a>同步hexo到github与网站</h3><p>在终端（此时你的位置应该为blog）运行</p>
@@ -299,7 +299,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 <p>应该就没有问题了。</p>
 <hr>
-<p>问题解决后，我们应该能够在github上看到<img src="/images/blog6.png">，并且在浏览器输入你的网站网址（<strong>xxx.github.io</strong>），应该是能够看到已经生成的界面。到这一步，最初的配置就完成了。<br><img src="/images/blog7.png"></p>
+<p>问题解决后，我们应该能够在github上看到<img src="/2021/08/17/hexo-githubPages-MacOS/blog6.png">，并且在浏览器输入你的网站网址（<strong>xxx.github.io</strong>），应该是能够看到已经生成的界面。到这一步，最初的配置就完成了。<br><img src="/2021/08/17/hexo-githubPages-MacOS/blog7.png"></p>
 
     </div>
 
@@ -309,8 +309,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/MacOS/" rel="tag"># MacOS</a>
               <a href="/tags/hexo%E4%BD%BF%E7%94%A8/" rel="tag"># hexo使用</a>
+              <a href="/tags/MacOS/" rel="tag"># MacOS</a>
           </div>
 
         
